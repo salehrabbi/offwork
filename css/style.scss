@@ -14,7 +14,7 @@ p {
     margin: 0;
 }
 
-.section-hedding {
+.section-headding {
     margin-bottom: (68px - 15);
     h2 {
         font-size: 36px;
@@ -37,8 +37,8 @@ p {
     padding: 110px 0;
 }
 
-@media (min-width:576px){
-    .flex{
+@media (min-width:576px) {
+    .flex {
         display: flex;
         flex-flow: row wrap;
     }
@@ -110,71 +110,34 @@ p {
 .top-product {
     .item {
         padding: 15px 0;
-        .img {
-            position: relative;
-            overflow: hidden;
-            .discount {
-                color: #fefefe;
-                font-size: 12px;
-                line-height: 15px;
-                background: #ed2e68;
-                height: 50px;
-                width: 50px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border-radius: 50%;
-                text-transform: uppercase;
-                font-weight: 600;
-                position: absolute;
-                right: 15px;
-                bottom: 15px;
-                z-index: 2;
-            }
-            a.overlay{
-                position: absolute;
-                z-index: 1;
-                height: 100%;
-                width: 100%;
-                background: rgba(251,173,27,.9);
-                display: block;
-                text-decoration: none;
-                transition: .5s;
-                top: 50%;
-                opacity: 0;
-                i{
-                    font-size: 50px;
-                    color: #ffffff;
-                    position: absolute;
-                    left: 0;
-                    right: 0;
-                    margin: 0 auto;
-                    text-align: center;
-                    top: -50%;
-                    margin-top: -25px;
-                    transition: .5s;
-                }
-            }
-            &:hover{
-                a.overlay{
-                    top: 0;
-                    opacity: 1;
-                    i{
-                        top: 50%;
-                    }
-                }
-            }
+        .discount {
+            color: #fefefe;
+            font-size: 12px;
+            line-height: 15px;
+            background: #ed2e68;
+            height: 50px;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            text-transform: uppercase;
+            font-weight: 600;
+            position: absolute;
+            right: 15px;
+            bottom: 15px;
+            z-index: 2;
         }
-        img {
-            width: 100%;
-            border-radius: 2px;
-        }
+
         .text {
             padding: 20px;
             a.title {
                 font-weight: 600;
                 font-size: 21px;
                 color: #3a3a3a;
+                &:hover {
+                    color: #fbad1b;
+                }
             }
             p {
                 margin: 10px 0 20px;
@@ -184,6 +147,145 @@ p {
                 color: #fbad1b;
                 font-size: 16px;
             }
+        }
+    }
+}
+
+.thumbnail-overlay {
+    position: relative;
+    overflow: hidden;
+    img {
+        width: 100%;
+        border-radius: 2px;
+    }
+    a.overlay {
+        position: absolute;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+        background: rgba(251, 173, 27, .9);
+        display: block;
+        text-decoration: none;
+        transition: .5s;
+        top: 50%;
+        opacity: 0;
+        i {
+            font-size: 50px;
+            color: #ffffff;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            text-align: center;
+            top: -50%;
+            margin-top: -25px;
+            transition: .5s;
+        }
+    }
+    &:hover {
+        a.overlay {
+            top: 0;
+            opacity: 1;
+            i {
+                top: 50%;
+            }
+        }
+    }
+}
+
+/*======================= blog ===================*/
+
+.blog {
+    .item {
+        padding:  15px 0;
+        .text {
+            padding: 20px 25px;
+            background: #f9f9f9;
+            border: 1px solid #e5e5e5;
+            p {
+                margin: 27px 0 18px;
+            }
+            a.title {
+                font-weight: 600;
+                font-size: 18px;
+                color: #3a3a3a;
+                display: inline-block;
+                line-height: (26/18);
+                margin-top: 27px;
+                &:hover {
+                    color: #fbad1b;
+                }
+            }
+        }
+        .btn {
+            color: #fff;
+            font-size: 12px;
+            line-height: 24px;
+            background: #3a3a3a;
+            border-radius: 0;
+            display: block;
+            padding: 0 5px;
+            font-family: $r;
+            font-weight: 300;
+            transition: .3s;
+            &:hover{
+                background: #fbad1b;
+            }
+        }
+        date {
+            color: #666666;
+            font-size: 12px;
+            line-height: 24px;
+            font-family: $r;
+            font-weight: 300;
+        }
+        time {
+            font-family: $r;
+            font-size: 12px;
+            color: #777777;
+        }
+        a.read-more {
+            margin-bottom: 32px;
+        }
+    }
+}
+
+a.read-more {
+    color: #666666;
+    text-decoration: none;
+    display: inline-block;
+    i {
+        color: #3a3a3a;
+        margin-left: 10px;
+    }
+    &:hover {
+        color: #fbad1b;
+        i {
+            color: #fbad1b;
+        }
+    }
+}
+
+.like-comment ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: right;
+    li {
+        display: inline-block;
+        margin-right: 5px;
+        a {
+            color: #666666;
+            text-decoration: none;
+            &:hover {
+                color: #fbad1b;
+            }
+        }
+        a.active{
+            color: #fbad1b;
+        }
+        &:last-child {
+            margin-right: 0;
         }
     }
 }
