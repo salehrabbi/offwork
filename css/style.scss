@@ -300,6 +300,94 @@ a.read-more {
     }
 }
 
+/*======================= review ===================*/
+
+.review {
+    background: #f9f9f9;
+}
+
+.client-review-carousel {
+    .content {
+        display: flex;
+        align-items: center;
+        padding: 60px 17px;
+        border: 1px solid #e0e0e0;
+        box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.05);
+        .img {
+            float: left;
+            img {
+                height: 140px;
+                width: 140px;
+                border-radius: 50%;
+            }
+        }
+        .text {
+            float: left;
+            width: calc(100% - 140px);
+            padding-left: 50px;
+            h4{
+                margin: 0;
+                font-weight: 500;
+                margin-top: 25px;
+                span{
+                    color: #fbad1b;
+                }
+            }
+            p {
+                &:before {
+                    font-family: 'Font Awesome 5 Free';
+                    line-height: 1;
+                    content: "\f10d";
+                    font-weight: 900;
+                    font-size: 20px;
+                    color: #dddddd;
+                    position: relative;
+                    top: -8px;
+                    left: -10px;
+                    margin-left: -19px;
+                }
+                &:after {
+                    font-family: 'Font Awesome 5 Free';
+                    line-height: 1;
+                    content: "\f10e";
+                    font-weight: 900;
+                    font-size: 20px;
+                    color: #dddddd;
+                    position: relative;
+                    bottom: -8px;
+                    right: -10px;
+                }
+            }
+        }
+    }
+    .owl-dots{
+        text-align: center;
+        margin-top: 70px;
+        .owl-dot{
+            padding: 3px;
+            background: rgba(58,58,58,.20);
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 0 3px;
+            span{
+                display: block;
+                background: #3a3a3a;
+                height: 100%;
+                width: 100%;
+                border-radius: 50%;
+            }
+        }
+        .owl-dot.active{
+            background: rgba(251,173,27,.20);
+            span{
+                background: #fbad1b;
+            }
+        }
+    }
+}
+
 /*======================= contact-us ===================*/
 
 .contact-us {
@@ -401,7 +489,7 @@ a.read-more {
             margin: 0 auto;
             opacity: 0.4;
             transition: .3s;
-            &:hover{
+            &:hover {
                 opacity: 1;
             }
             img {

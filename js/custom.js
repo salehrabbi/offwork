@@ -31,3 +31,29 @@ $('.partner-carousel').owlCarousel({
         }
     }
 })
+
+$('.client-review-carousel').owlCarousel({
+    nav: true,
+    dots: true,
+    autoplay: true,
+    autoplayHoverPause: true,
+    nav: false,
+    rewind: true,
+    loop: true,
+    margin: 30,
+    responsiveClass: true,
+
+    responsive: {
+        0: {
+            items: 1,
+            nav: false,
+            loop: false
+        },
+        768: {
+            items: 2,
+        },
+        992: {
+            items: 2,
+        }
+    }
+})
