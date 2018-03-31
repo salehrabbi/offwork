@@ -289,3 +289,86 @@ a.read-more:hover i {
 .like-comment ul li:last-child {
   margin-right: 0;
 }
+
+/*======================= contact-us ===================*/
+.contact-us .item {
+  text-align: center;
+  padding: 15px 0;
+}
+.contact-us .item .icon {
+  height: 170px;
+  width: 170px;
+  background: rgba(251, 173, 27, 0.3);
+  color: #fff;
+  border-radius: 50%;
+  padding: 30px;
+  margin: 0 auto;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+.contact-us .item .icon i {
+  background: #fbad1b;
+  border-radius: 50%;
+  display: block;
+  height: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 36px;
+  width: 100%;
+  min-height: 110px;
+}
+.contact-us .item p {
+  font-size: 21px;
+  color: #3a3a3a;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.contact-us .item:hover .icon {
+  padding: 0;
+}
+
+.contact-form {
+  padding-top: 10px;
+}
+.contact-form input,
+.contact-form textarea {
+  background: none;
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid #666666;
+  font-size: 14px;
+  color: #666666;
+  padding: 10px 20px;
+  height: 45px;
+  margin-bottom: 30px;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #fbad1b;
+}
+.contact-form textarea {
+  -webkit-transition: .5s;
+  transition: .5s;
+  margin-bottom: 70px;
+}
+.contact-form textarea:focus {
+  height: 100px;
+}
+.contact-form button {
+  background: #fbad1b;
+  border: none;
+  width: 100%;
+  color: #fff;
+  height: 42px;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 16px;
+}

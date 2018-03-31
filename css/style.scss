@@ -197,7 +197,7 @@ p {
 
 .blog {
     .item {
-        padding:  15px 0;
+        padding: 15px 0;
         .text {
             padding: 20px 25px;
             background: #f9f9f9;
@@ -228,7 +228,7 @@ p {
             font-family: $r;
             font-weight: 300;
             transition: .3s;
-            &:hover{
+            &:hover {
                 background: #fbad1b;
             }
         }
@@ -266,7 +266,7 @@ a.read-more {
     }
 }
 
-.like-comment ul{
+.like-comment ul {
     padding: 0;
     margin: 0;
     list-style: none;
@@ -281,11 +281,91 @@ a.read-more {
                 color: #fbad1b;
             }
         }
-        a.active{
+        a.active {
             color: #fbad1b;
         }
         &:last-child {
             margin-right: 0;
         }
     }
+}
+
+/*======================= contact-us ===================*/
+
+.contact-us {
+    .item {
+        text-align: center;
+        padding: 15px 0;
+        .icon {
+            height: 170px;
+            width: 170px;
+            background: rgba(251, 173, 27, .3);
+            color: #fff;
+            border-radius: 50%;
+            padding: 30px;
+            margin: 0 auto;
+            transition: .5s;
+            i {
+                background: #fbad1b;
+                border-radius: 50%;
+                display: block;
+                height: 100%;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 36px;
+                width: 100%;
+                min-height: 110px;
+            }
+        }
+        p {
+            font-size: 21px;
+            color: #3a3a3a;
+            font-weight: 500;
+            margin-top: 20px;
+        }
+        &:hover {
+            .icon {
+                padding: 0;
+            }
+        }
+    }
+}
+
+.contact-form {
+    padding-top: 10px;
+    input,
+    textarea {
+        background: none;
+        border: none;
+        width: 100%;
+        border-bottom: 1px solid #666666;
+        font-size: 14px;
+        color: #666666;
+        padding: 10px 20px;
+        height: 45px;
+        margin-bottom: 30px;
+        &:focus{
+            border-color: #fbad1b;
+        }
+    }
+    textarea{
+        transition: .5s;
+        margin-bottom: 70px;
+        &:focus{
+            height: 100px;
+        }
+    }
+    button {
+        background: #fbad1b;
+        border: none;
+        width: 100%;
+        color: #fff;
+        height: 42px;
+        border-radius: 50px;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
 }
