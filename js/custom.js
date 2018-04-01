@@ -30,7 +30,7 @@ $('.partner-carousel').owlCarousel({
             items: 6,
         }
     }
-})
+});
 
 $('.client-review-carousel').owlCarousel({
     nav: true,
@@ -49,11 +49,29 @@ $('.client-review-carousel').owlCarousel({
             nav: false,
             loop: false
         },
-        768: {
-            items: 2,
-        },
         992: {
             items: 2,
         }
     }
-})
+});
+
+
+
+$('.replyu').after('<form action="#" class="comment-area"><textarea placeholder="Write Message"></textarea><div class="upload text-right"><a href="#"><img src="images/emoji.png" alt=""></a><a href="#"><img src="images/camera.png" alt=""></a><a href="#"><img src="images/gif.png" alt=""></a> </div></form>');
+
+$('.reg-comment').click(function () {
+    $(this).parentsUntil('div.text').toggleClass('active');
+    $(this).toggleClass('active');
+});
+
+
+
+
+$('.replyu').click(function () {
+    if ($(this).hasClass('active')) {
+        $(this).removeClass('active');
+    } else {
+        $('.replyu.active').removeClass('active');
+        $(this).addClass('active');
+    }
+});
